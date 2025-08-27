@@ -1,7 +1,7 @@
 # Predicción de Diabetes con Regresión Lineal Múltiple
 
 ## Introducción
-Este proyecto utiliza un **modelo de regresión lineal múltiple** para estimar la probabilidad de que un paciente tenga diabetes. El modelo se entrena con variables clínicas seleccionadas del dataset *Predict Diabetes from Medical Records*: **Glucosa, IMC y Edad**. La idea es poder predecir riesgos a partir de valores médicos y comprender qué factores influyen más en la probabilidad de desarrollar diabetes.
+Este proyecto utiliza un **modelo de regresión lineal múltiple** para estimar la probabilidad de que un paciente tenga diabetes. El modelo se entrena con variables clínicas seleccionadas del dataset *Predict Diabetes from Medical Records*: **Glucosa, IMC y Edad**. La idea es predecir riesgos a partir de valores médicos y comprender qué factores influyen más en la probabilidad de desarrollar diabetes.
 
 ## Justificación de la elección de variables
 - **Glucosa:** Es el indicador más directo de diabetes; niveles altos aumentan significativamente el riesgo.  
@@ -13,31 +13,39 @@ Estas variables permiten construir un modelo simple, interpretable y con sentido
 ## Casos de prueba
 
 ### 1. Joven con diabetes
-- **Edad:** 25 años  
 - **Glucosa:** 170 mg/dL  
 - **IMC:** 35  
-**Probabilidad estimada:** 63 %  
+- **Edad:** 25 años  
+**Probabilidad estimada:** 63 %
+  
+<img width="577" height="252" alt="image" src="https://github.com/user-attachments/assets/6048df56-63ca-4738-a538-1b4645e71676" />
 > A pesar de la juventud, los valores altos de glucosa y IMC aumentan significativamente el riesgo.
-
+> 
 ### 2. Viejo con diabetes
-- **Edad:** 65 años  
 - **Glucosa:** 160 mg/dL  
 - **IMC:** 30  
-**Probabilidad estimada:** 72 %  
-> La combinación de edad avanzada, glucosa elevada y sobrepeso genera la probabilidad más alta entre los casos.
+- **Edad:** 65 años  
+**Probabilidad estimada:** 72 %
+  
+<img width="578" height="256" alt="image" src="https://github.com/user-attachments/assets/dcd71057-128c-48fa-8aa0-7264dfcc3b18" />
+> La combinación de glucosa elevada, IMC alto y edad avanzada genera la probabilidad más alta entre los casos.
 
 ### 3. Viejo sin diabetes
-- **Edad:** 70 años  
 - **Glucosa:** 95 mg/dL  
 - **IMC:** 24  
-**Probabilidad estimada:** 29 %  
+- **Edad:** 70 años  
+**Probabilidad estimada:** 29 %
+  
+  <img width="587" height="259" alt="image" src="https://github.com/user-attachments/assets/22d66e26-ae60-44a5-ac15-d442695e7dbf" />
 > Valores normales de glucosa e IMC reducen significativamente el riesgo, incluso con edad avanzada.
 
 ### 4. Joven sin diabetes
-- **Edad:** 22 años  
 - **Glucosa:** 90 mg/dL  
 - **IMC:** 25  
-**Probabilidad estimada:** 3 %  
+- **Edad:** 22 años  
+**Probabilidad estimada:** 3 %
+  
+  <img width="581" height="256" alt="image" src="https://github.com/user-attachments/assets/395f3f08-f61e-49c2-b953-3271020f51b2" />
 > La juventud combinada con parámetros normales de glucosa e IMC mantiene la probabilidad muy baja.
 
 ## Conclusión
